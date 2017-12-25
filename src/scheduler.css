@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* enabling marked timespans for month view */
+.dhx_scheduler_month .dhx_marked_timespan {
+  display: block;
+}
+/* style to display special dates, e.g. holidays */
+.holiday {
+  background-color: #fadcd3;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+  color: #e2b8ac;
+
+}
+/* if there are still pending tasks for some day */
+.pending {
+  background: #fdffd3 url('data/imgs/i_yellow.png') no-repeat center center;
+}
+/* if all tasks for this day were completed */
+.completed {
+  background: #d9f5db url('data/imgs/v_green.png') no-repeat center center;
+}
+/* we don't want to show that marked timespans on day and week views */
+.dhx_scheduler_day .pending, .dhx_scheduler_week .pending, .dhx_scheduler_day .completed, .dhx_scheduler_week .completed {
+  display: none;
+}
+.dhx_scale_holder_now.weekday, .dhx_scale_holder.weekday{
+  background-image:url('data/imgs/week_bg.png');
+}
+.good_day .dhx_month_body{
+  background-color: #ececec;
+}
+.good_day .dhx_month_head{
+  background-color: #dddfd9;
+}
